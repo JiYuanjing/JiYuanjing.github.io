@@ -63,3 +63,19 @@ footer {
   background-repeat: repeat-x;
   /* background-position: 0 0; */
 }
+
+.custom-btn {
+  /* background-color: #f8f9fa; /* 浅灰色背景 */ */
+  background-color: #F0F0F0; /* 浅灰色背景 */
+  color: #212529; /* 暗色文字 */
+  font-size: 20px; /* 设置字体大小 */
+  border: 0px solid #dcdcdc; /* 边框颜色，可选 */
+  width: auto; /* 按钮宽度自适应内容 */
+  padding-left: 0.5rem; /* 左填充 */
+  padding-right: 0.5rem; /* 右填充 */
+}
+/* 当按钮被悬停时的颜色变化 */
+.custom-btn:hover {
+  background-color: #e2e6ea;
+  color: #212529;
+}
