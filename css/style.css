@@ -74,12 +74,11 @@ footer {
   padding-left: 0.5rem; /* 左填充 */
   padding-right: 0.5rem; /* 右填充 */
 }
-/* 当按钮被悬停时的颜色变化 */
+/* change the color when mouse is rest above */
 .custom-btn:hover {
   background-color: #e2e6ea;
   color: #212529;
 }
-
 
 .carousel-item {
   height: 400px; /* Set a fixed height for carousel item */
