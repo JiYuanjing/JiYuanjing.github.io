@@ -8,17 +8,19 @@
     <!-- <link rel="stylesheet" media="screen" href="particle/css/style.css"> -->
     <!---my own particle backgrounds--->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
-    <script src="sketch.js"> </script>
+    <script src="js/sketch.js"> </script>
+    <!----my---->
+    <script src="js/myscript.js"> </script>
     <!----boostrap----->
     <link href="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/js/bootstrap.bundle.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <!---latex---->
-    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.0/es5/tex-mml-chtml.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-AMS_HTML"></script>
+    <!-- <script id="MathJax&#45;script" async src="js/mathjax/tex&#45;chtml.js"></script> -->
     <!--------add my style file----->
     <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
-
   <body>
 
     <!-- particles.js container from github -->
@@ -41,8 +43,8 @@
           <li class="nav-item me-5"><a class="nav-link" href="#recent">Recent news</a></li>
           <li class="nav-item me-5"><a class="nav-link" href="#CV">About Me</a></li>
           <li class="nav-item me-5"><a class="nav-link" href="#Pub">Publications</a></li>
-          <li class="nav-item me-5"><a class="nav-link" href="#life">Life</a></li>
           <li class="nav-item me-5"><a class="nav-link" href="#Links">Links</a></li>
+          <li class="nav-item me-5"><a class="nav-link" href="#life">Life</a></li>
           <li class="nav-item me-5"><a class="nav-link" href="#Contact">Contact</a></li>
         </ul>
       </div>
@@ -61,79 +63,34 @@
           <a href="https://github.com/JiYuanjing" class="btn btn-primary">My github</a>
           <a href="#" class="btn btn-primary">To be added ...</a>
         </div>
-
       </div>
     </div>
     </div>
 
-    <div class="section" id="recent">
-      <hr><br><br>
-      <h1>Recent news</h1>
-    </div>
+    <div class="section" id="recent"></div>
 
-    <div class="section" id="CV">
-      <hr><br><br>
-      <h1>About Me</h1>
-      <p><small>(Refresh the webpage if LATEX is not correctly loaded.)</small></p>
-      <h2>Employment</h2>
-      <h3  style="display: flex; justify-content: space-between;"> 
-        <span> Lawrence Berkeley National Laboratory</span>
-        <span style="text-align: right; font-style: italic;">2020.11 - now</span>
-      </h3>
+    <div class="section" id="CV"></div>
 
-      <h2>Education</h2>
-      <h3 style="display: flex; justify-content: space-between;">
-        <span> University of Science and Technology of China</span>
-        <span style="text-align: right; font-style: italic;">2015.09 - 2020.10</span>
-      </h3>
+    <div class="section" id="Pub"></div>
 
-      <hr>
-      <h2>Research Experience</h2>
-      <h3 style="display: flex; justify-content: space-between;">
-        <span>Heavy flavor production in heavy ion collisions</span>
-        <span style="text-align: right; font-style: italic;">2017.06 - now</span>
-      </h3>
-      <ul>
-        <li> Take the leading role in the measurement of the elliptic flow of heavy-flavor decay electrons in Au+Au collisions at \( \sqrt{s_{\mathrm{NN}}} = 27 \) and 54.4 GeV at the STAR experiment. I was responsible for the whole physics analysis, the \( c \rightarrow e \) \( v_2 \) calculation assuming charm hadrons follow NCQ scaling, and most of the paper writing.</li>
-        <li> Take the leading role in measuring \(D^{*+}\) production and \(D^{*+}/D^{0}\) yields ratio in Au+Au collisions at 200 GeV at the STAR utilizing Heavy Flavor Tracker (HFT). Responsible for the whole data analysis. </li>
-      </ul>
-      <h3 style="display: flex; justify-content: space-between;">
-      <span>Hypernuclei production</span>
-        <span style="text-align: right; font-style: italic;">2021.05 - now</span>
-      </h3>
-      <p>to be added</p>
-    </div>
+    <div class="section" id="Links"></div>
 
-    <div class="section" id="Pub">
-      <hr><br><br>
-      <h1>Selected Publications</h1>
-      <p>Full list of publications (including collaboration publications) with my authorship see Google Scholar: <br></p>
-      <a href="https://scholar.google.com/citations?hl=en&user=CU9xbTcAAAAJ" class="btn btn-primary">Google Scholar</a> 
-      <h3 style="display: flex; justify-content: space-between;">
-        <span> Principle author paper from STAR collaboration</span>
-      </h3>
-      <ul>
-        <li> </li>
-        <li> </li>
-      </ul>
-
-    </div>
-
-    <div class="section" id="Links">
-      <hr><br><br>
-      <h1>Links</h1>
-      <p> to be added</p>
-    </div>
-
-    <div class="section" id="life">
-      <hr><br><br>
-      <h1>Life</h1>
-      <p> to be added</p>
-    </div>
+    <div class="section" id="life"></div>
 
     <footer class="container-fluid text-center">
       <p> © Yuanjing Ji. All Rights Reserved.</p>
     </footer>
+
+    <script>
+        // 当文档加载完毕时执行
+        document.addEventListener('DOMContentLoaded', function() {
+          loadHTML('html/news.html', 'recent');
+          loadHTML('html/pub.html', 'Pub');
+          loadHTML('html/cv.html', 'CV');
+          loadHTML('html/link.html', 'Links');
+          loadHTML('html/life.html', 'life');
+        });
+    </script>
 
   </body>
 </html>
