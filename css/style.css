@@ -9,6 +9,7 @@
   z-index: 1000; /* 确保导航栏在其他内容的上方 */
   margin-bottom: 0;
   border-radius: 0;
+  background-color: rgba(0, 0, 0, 0.7);
 }
 .nav-item {
   display: inline-block;
@@ -17,6 +18,9 @@
   color: white;
   text-decoration: none;
   transition: transform 0.2s ease; /* 平滑变换效果 */
+}
+.navbar.fixed-top {
+  background-color: rgba(0, 0, 0, 0.5) !important; /* 对于固定顶部导航栏也设置半透明背景 */
 }
 .nav-item:hover {
   transform: scale(1.4); /* 鼠标悬停时放大 */
