@@ -79,3 +79,53 @@ footer {
   background-color: #e2e6ea;
   color: #212529;
 }
+
+
+.carousel-item {
+  height: 400px; /* Set a fixed height for carousel item */
+  margin-bottom: 100px; /* Add extra space for the caption */
+}
+.carousel-item img {
+  object-fit: contain; /* Images will be scaled to maintain their aspect ratio */
+  max-height: 100%; /* Images will not exceed the height of the carousel item */
+}
+.carousel-caption {
+  position: absolute;
+  bottom: -100px; /* Adjust this value to move the caption below the image */
+  left: 0;
+  width: 100%;
+  /* background-color: rgba(50, 50, 50, 0.0); /* Dark background with some transparency */ */
+  /* color: #f8f9fa; /* Light text for better readability */ */
+  /* color: #000000; /* Light gray text color */ */
+  color: #1f2021; /* Light gray text color */
+  font-size: 0.9rem; /* Smaller font size */
+  padding: 0.5rem; /* Padding around the text */
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9); /* Text shadow for better readability */
+}
+/* Remove the positioning so it doesn't sit over the image */
+.carousel-caption.d-none,
+.carousel-caption.d-md-block {
+  position: static;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 40px;
+  width: 40px;
+  outline: black;
+  background-size: 100%, 100%;
+  border-radius: 50%;
+  border: 1px solid black;
+  background-image: none;
+}
+.carousel-control-prev-icon:after,
+.carousel-control-next-icon:after {
+  font-size: 20px;
+  color: black;
+}
+.carousel-control-prev-icon:after {
+  content: '<';
+}
+.carousel-control-next-icon:after {
+  content: '>';
+}
