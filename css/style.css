@@ -82,8 +82,8 @@ footer {
 
 
 .carousel-item {
-  height: 200px; /* Set a fixed height for carousel item */
-  margin-bottom: 50px; /* Add extra space for the caption */
+  height: 400px; /* Set a fixed height for carousel item */
+  margin-bottom: 100px; /* Add extra space for the caption */
 }
 .carousel-item img {
   object-fit: contain; /* Images will be scaled to maintain their aspect ratio */
