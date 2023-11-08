@@ -105,5 +105,11 @@ class Particle {
     fill(255, 255, 255, 180); // 反光的颜色和透明度
     ellipse(highlight.x, highlight.y, highlight.diameter);
   }
+
+  // Check if the particle is near the mouse
+  isNearMouse(mouseX, mouseY) {
+    let distance = dist(this.x, this.y, mouseX, mouseY);
+    return distance < 10; // 10 pixels proximity to the mouse
+  }
 }
 
