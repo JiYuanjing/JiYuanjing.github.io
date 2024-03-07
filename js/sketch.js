@@ -8,7 +8,6 @@ function setup() {
   const cancas =  createCanvas(windowWidth, windowHeight);
   cancas.parent("bkgd");
 
-
   // for (let i = 0; i < 100; i++) { // 100: particle numbers on the screen
   for (let i = 0; i < 150; i++) {
     particles[i] = new Particle();
