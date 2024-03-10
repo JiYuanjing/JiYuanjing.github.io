@@ -9,7 +9,8 @@ function setup() {
   cancas.parent("bkgd");
 
   // for (let i = 0; i < 100; i++) { // 100: particle numbers on the screen
-  for (let i = 0; i < 150; i++) {
+  // for (let i = 0; i < 150; i++) {
+  for (let i = 0; i < 120; i++) {
     particles[i] = new Particle();
   }
 }
@@ -67,7 +68,7 @@ class Particle {
     let mouse = createVector(mouseX, mouseY);
     let dir = p5.Vector.sub(mouse, createVector(this.x, this.y));
     let d = dir.mag();
-    if (d < 50) {
+    if (d < 45) {
       dir.normalize();
       dir.mult(this.maxSpeed);
       this.applyForce(dir);
@@ -108,7 +109,7 @@ class Particle {
   // Check if the particle is near the mouse
   isNearMouse(mouseX, mouseY) {
     let distance = dist(this.x, this.y, mouseX, mouseY);
-    return distance < 10; // 10 pixels proximity to the mouse
+    return distance < 8; // 10 pixels proximity to the mouse
   }
 }
 
