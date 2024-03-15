@@ -30,7 +30,7 @@
 .section {
   margin: 100px auto;
   width: 100%;
-  max-width: 800px;
+  max-width: 500px;
   z-index: 10; /* 确保内容在画布之上 */
   position: relative
 }
