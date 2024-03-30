@@ -42,8 +42,8 @@ class Particle {
     this.vel = p5.Vector.random2D(); // Assign a random velocity
     this.vel.mult(random(0.5, 2)); // Randomize the velocity magnitude
     this.acc = createVector(0, 0);
-    this.maxSpeed = 0.8; //reduce particle drifting speed 
-    this.maxForce = 0.08; //reduce particle drifting speed 
+    this.maxSpeed = 0.6; //reduce particle drifting speed 
+    this.maxForce = 0.04; //reduce particle drifting speed 
 
     // random color
     this.color = random([
@@ -68,7 +68,7 @@ class Particle {
     let mouse = createVector(mouseX, mouseY);
     let dir = p5.Vector.sub(mouse, createVector(this.x, this.y));
     let d = dir.mag();
-    if (d < 45) {
+    if (d < 35) {
       dir.normalize();
       dir.mult(this.maxSpeed);
       this.applyForce(dir);
@@ -109,7 +109,7 @@ class Particle {
   // Check if the particle is near the mouse
   isNearMouse(mouseX, mouseY) {
     let distance = dist(this.x, this.y, mouseX, mouseY);
-    return distance < 8; // 10 pixels proximity to the mouse
+    return distance < 6; // 10 pixels proximity to the mouse
   }
 }
 

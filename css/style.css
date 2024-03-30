@@ -25,7 +25,6 @@
 .nav-item:hover {
   transform: scale(1.4); /* 鼠标悬停时放大 */
 }
-
 /* ... 其他样式 ... */
 .section {
   margin: 100px auto;
@@ -139,10 +138,3 @@ footer {
 .carousel-control-next-icon:after {
   content: '>';
 }
-  .map-container {
-    width: 80%; /* 或者您可以使用像素值，例如 600px */
-    height: 400px; /* 高度设置 */
-    margin: 20px auto; /* 居中显示 */
-    border: 2px solid #ccc; /* 边框设置，可按需调整 */
-    box-shadow: 0 0 8px #ccc; /* 添加一些阴影效果，可选 */
-  }
