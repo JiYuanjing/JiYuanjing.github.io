@@ -1,5 +1,4 @@
 
-
 function loadHTML(url, elementId) {
     fetch(url)
         .then(response => {
